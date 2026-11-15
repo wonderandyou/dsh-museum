@@ -1,3 +1,5 @@
 *.bak-*
 *.broken*
 *.failed*
+
+*.zip
