@@ -1,0 +1,20 @@
+# dsh-museum —— bundle 自己的补丁层
+#
+# 可调项：
+#   roots         要扫描的根目录（空数组 = 不扫描，只靠会话触发）
+#   settleHours   完工静默期（小时）
+#   maxProjects   单次扫描上限
+#   scanMinutes   后台扫描间隔
+#   enabled       总开关
+- insert:
+    - id: museum
+      name: 'dsh-museum'
+      config:
+        roots:
+          - 'D:\插件'
+          - 'C:\Users\q3153\Documents'
+          - 'D:\软件'
+        settleHours: 0   # 首次安装用 0：现有项目立刻入库；看腻了改回 6
+        maxProjects: 200
+        scanMinutes: 10
+        enabled: true
